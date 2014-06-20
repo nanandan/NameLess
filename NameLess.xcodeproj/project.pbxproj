@@ -37,6 +37,7 @@
 		6D59FED31952E7D900B0B1B2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FED21952E7D900B0B1B2 /* StoreKit.framework */; };
 		6D59FED51952E7F500B0B1B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FED41952E7F500B0B1B2 /* SystemConfiguration.framework */; };
 		6D59FED71952EC1800B0B1B2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FED61952EC1800B0B1B2 /* MessageUI.framework */; };
+		6D59FEDA1953BE9200B0B1B2 /* loggedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59FED91953BE9200B0B1B2 /* loggedInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		6D59FED21952E7D900B0B1B2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6D59FED41952E7F500B0B1B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6D59FED61952EC1800B0B1B2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6D59FED81953BE9200B0B1B2 /* loggedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loggedInViewController.h; sourceTree = "<group>"; };
+		6D59FED91953BE9200B0B1B2 /* loggedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loggedInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 				6D1A6B4419528C67003C9AF0 /* personModelController.h */,
 				6D1A6B4519528C67003C9AF0 /* personModelController.m */,
 				6D1A6B4719528C67003C9AF0 /* Main.storyboard */,
+				6D59FED81953BE9200B0B1B2 /* loggedInViewController.h */,
+				6D59FED91953BE9200B0B1B2 /* loggedInViewController.m */,
 				6D1A6B6F19529D18003C9AF0 /* loginViewController.h */,
 				6D1A6B7019529D18003C9AF0 /* loginViewController.m */,
 				6D1A6B6C19529CF5003C9AF0 /* firstpageViewController.h */,
@@ -326,6 +331,7 @@
 				6D1A6B6B19529BC0003C9AF0 /* registerViewController.m in Sources */,
 				6D1A6B4619528C67003C9AF0 /* personModelController.m in Sources */,
 				6D1A6B4019528C67003C9AF0 /* personRootViewController.m in Sources */,
+				6D59FEDA1953BE9200B0B1B2 /* loggedInViewController.m in Sources */,
 				6D1A6B6E19529CF5003C9AF0 /* firstpageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,8 @@
 
 #import "personDataViewController.h"
 
+#import "firstpageViewController.h"
+
 @interface personRootViewController ()
 @property (readonly, strong, nonatomic) personModelController *modelController;
 @end
@@ -28,9 +30,11 @@
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     self.pageViewController.delegate = self;
 
+    
     personDataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    
 
     self.pageViewController.dataSource = self.modelController;
 

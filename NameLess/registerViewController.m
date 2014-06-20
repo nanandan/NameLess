@@ -25,10 +25,23 @@
 
 - (void)viewDidLoad
 {
+    
+    UITapGestureRecognizer *tap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
   
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+-(void)dismissKeyboard {
+    [_usernameField resignFirstResponder];
+    [_emailField resignFirstResponder];
+    [_passwordField resignFirstResponder];
+    [_reEnterPasswordField resignFirstResponder];
+}
+
+
 -(void) viewDidAppear:(BOOL)animated {
     PFUser *user = [PFUser currentUser];
     if(user.username != nil) {
@@ -54,10 +67,8 @@
 */
 
 - (IBAction)registerAction:(id)sender {
-    [_usernameField resignFirstResponder];
-    [_emailField resignFirstResponder];
-    [_passwordField resignFirstResponder];
-    [_reEnterPasswordField resignFirstResponder];
+    
+    [self dismissKeyboard];
     [self checkFieldsComplete];
 }
 
@@ -76,6 +87,8 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops" message:@"Password mismatch occurred." delegate: nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
     } else {
+        
+        [self registerUser];
         
     }
 }
